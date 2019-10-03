@@ -1,0 +1,123 @@
+td,
+th {
+    border: solid 1px black;
+}
+
+main button:hover,
+main button:focus {
+    background-color: #ffffcc !important;
+    color: #27487F;
+    border: 2px solid #27487F;
+}
+
+main a:focus,
+main a:hover {
+    background-color: #ffffcc !important;
+    color: #27487F;
+    border: 1px solid #27487F;
+}
+
+
+/* main a:active, main a:focus, main a:hover, aside a:active, aside a:focus, aside a:hover {
+    background-color: #ffffcc !important;
+    color: #BF1722;
+    border: 1px solid #27487F;
+    /* border-top: 1px solid #27487F;
+    border-bottom: 1px solid #27487F;
+    border-left: 1px solid #27487F;
+    border-right: 1px solid #27487F;
+    border-radius: 0px; 
+} */
+
+#skiptocontent a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #BF1722;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+a:active,
+a:focus,
+a:hover,
+#features p.more a:hover,
+p.archive a:hover,
+#features p.more a:focus,
+p.archive a:focus {
+    outline: solid;
+    outline-width: 2px;
+    outline-color: #27487F;
+    background-color: #ffffcc !important;
+    color: #27487F;
+}
+
+
+/* color: #BF1722; */
+
+
+/* border: 1px solid #ffffcc;
+    border-top: 1px solid #ffffcc ;
+    border-bottom: 1px solid #ffffcc;
+    border-left-color: chocolate;
+    border-radius: 4px;
+    
+    */
+
+
+/*
+GESB CSS
+*/
+
+.date-input:focus,
+.date-input:hover,
+.date-input-year:focus,
+.date-input-year:hover,
+input[type="Radio"]:focus,
+input[type="Radio"]:hover,
+input:focus[type="tel"],
+input[type="tel"]:hover,
+.field-input input[type=radio]:focus+label,
+button.next-button:hover,
+button.next-button:focus {
+    outline: solid;
+    outline-width: 2px;
+    outline-color: #27487F;
+}
+
+@media only screen and (min-width: 769px) .bottom-links__gov {
+    float: left;
+    /* display: block; */
+    /* margin-right: 2.35765%; */
+    width: 8.52%;
+}
+
+a.nofocus:focus {
+    outline: none;
+}
+
+
+/*
+a.nofocus:active, a.nofocus:focus, a.nofocus:hover {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+ }
+*/
+
+
+/* #0000C0 */
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
