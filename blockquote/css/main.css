@@ -4,24 +4,92 @@ blockquote {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
+}
+
+blockquote:before {
     color: #ccc;
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-  }
+}
 
-  blockquote:after {
+blockquote:after {
     color: #ccc;
     content: close-quote;
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-  }
-  blockquote p {
+}
+
+blockquote p {
     display: inline;
-  }
+}
+
+
+/** Code formating */
+
+#wikiArticle {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #3d7e9a;
+    width: 75%;
+    /* margin: 0 3em 0 3em;*/
+    margin-top: 2em;
+    margin-left: 2.8em;
+}
+
+.text-content pre[class*=language-],
+pre.syntaxbox,
+pre.twopartsyntaxbox {
+    font-size: 18px;
+    font-size: 1rem;
+    background: #eee;
+    border: 0 solid #3d7e9a;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+    font-family: consolas, monaco, "Andale Mono", monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: auto;
+    direction: ltr!important;
+    text-align: left!important;
+    border-left-width: 5px!important;
+    border-right-width: 0!important;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+    color: #690;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.boolean,
+.token.constant,
+.token.deleted,
+.token.number,
+.token.property,
+.token.symbol,
+.token.tag {
+    color: #905;
+}
