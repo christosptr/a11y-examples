@@ -7,7 +7,13 @@
   box-sizing:border-box;
 }
 
-.left {
+.main-menu {
+  background-color:#f39821;
+  padding:20px;
+  float:left;
+  width:100%; /* The width is 100%, by default */
+}
+.left-menu {
   background-color:#2196F3;
   padding:20px;
   float:left;
@@ -27,10 +33,16 @@
   float:left;
   width:20%; /* The width is 20%, by default */
 }
+.contentinfo{
+  background-color:#ebe714;
+  padding:20px;
+  float:left;
+  width:100%; /* The width is 100%, by default */
+}
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width:800px) {
-  .left, .main, .right {
+  .main-menu, .left-menu, .main, .right, .contentinfo {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
@@ -43,17 +55,25 @@
 
 <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
 
-<div class="left">
-  <p>Left Menu</p>
-</div>
+<nav role="navigation" aria-label="main" class="main-menu">
+  <p>Main Menu</p>
+</nav>
 
-<div class="main">
+<nav role="navigation" aria-label="Left" class="left-menu">
+  <p>Left Menu</p>
+</nav>
+
+<main role="main" class="main">
   <p>Main Content</p>
-</div>
+</main>
 
 <div class="right">
   <p>Right Content</p>
 </div>
+
+<Footer role="contentinfo" class="contentinfo">
+  <p>Footer</p>
+</Footer>
 
 </body>
 </html>
