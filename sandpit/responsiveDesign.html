@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing:border-box;
-}
+    <title>Bootstrap and Responsive design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-.main-menu {
-  background-color:#f39821;
-  padding:20px;
-  float:left;
-  width:100%; /* The width is 100%, by default */
-}
-.left-menu {
-  background-color:#2196F3;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-
-.main {
-  background-color:#f1f1f1;
-  padding:20px;
-  float:left;
-  width:60%; /* The width is 60%, by default */
-}
-
-.right {
-  background-color:#4CAF50;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-.contentinfo{
-  background-color:#ebe714;
-  padding:20px;
-  float:left;
-  width:100%; /* The width is 100%, by default */
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
-  .main-menu, .left-menu, .main, .right, .contentinfo {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-</style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .nav {
+            line-height: 30px;
+            background-color: #eeeeee;
+            height: 30px;
+            width: 100%;
+            float: left;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        
+        .main-menu {
+            background-color: #f39821;
+            padding: 20px;
+            float: left;
+            width: 100%;
+            /* The width is 100%, by default */
+        }
+        
+        .left-menu {
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+        
+        .main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;
+            /* The width is 60%, by default */
+        }
+        
+        .right {
+            background-color: #4CAF50;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+        
+        .contentinfo {
+            background-color: #ebe714;
+            padding: 20px;
+            float: left;
+            width: 100%;
+            /* The width is 100%, by default */
+        }
+        /* Use a media query to add a break point at 800px: */
+        
+        @media screen and (max-width:800px) {
+            .main-menu,
+            .left-menu,
+            .main,
+            .right,
+            .contentinfo {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <h1>Media Queries</h1>
+    <p>Resize the browser window.</p>
 
-<h1>Media Queries</h1>
-<p>Resize the browser window.</p>
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
 
-<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+    <nav role="navigation" aria-label="main" class="main-menu">
+        <p>Main Menu</p>
+    </nav>
 
-<nav role="navigation" aria-label="main" class="main-menu">
-  <p>Main Menu</p>
-</nav>
+    <div role="navigation" aria-label="Left" class="left-menu">
+        <p>Left Menu</p>
+    </div>
 
-<nav role="navigation" aria-label="Left" class="left-menu">
-  <p>Left Menu</p>
-</nav>
+    <main role="main" class="main">
+        <p>Main Content</p>
+    </main>
 
-<main role="main" class="main">
-  <p>Main Content</p>
-</main>
+    <div class="right">
+        <p>Right Content</p>
+    </div>
 
-<div class="right">
-  <p>Right Content</p>
-</div>
-
-<Footer role="contentinfo" class="contentinfo">
-  <p>Footer</p>
-</Footer>
+    <Footer role="contentinfo" class="contentinfo">
+        <p>Footer</p>
+    </Footer>
 
 </body>
+
 </html>

@@ -7,103 +7,159 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sandpit</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  <style>
-    * {
-      box-sizing:border-box;
-    }
-    
-    .main-menu {
-      background-color:#f39821;
-      padding:20px;
-      float:left;
-      width:100%; /* The width is 100%, by default */
-    }
-    .left-menu {
-      background-color:rgb(188, 194, 199);
-      padding:20px;
-      float:left;
-      width:20%; /* The width is 20%, by default */
-    }
-    
-    .main {
-      background-color:#f1f1f1;
-      padding:20px;
-      float:left;
-      width:60%; /* The width is 60%, by default */
-  
-    }
-    
-    .right {
-      background-color:#4CAF50;
-      padding:20px;
-      float:left;
-      width:20%; /* The width is 20%, by default */
-    }
-    .contentinfo{
-      background-color:#ebe714;
-      padding:20px;
-      float:left;
-      width:100%; /* The width is 100%, by default */
-    }
-    
-    /* Use a media query to add a break point at 800px: */
-    @media screen and (max-width:800px) {
-      .main-menu, .left-menu, .main, .right, .contentinfo {
-        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-      }
-    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scrll.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .clearFloat {
+            clear: both;
+        }
+        
+        .main-menu {
+            background-color: #f39821;
+            padding: 20px;
+            float: left;
+            width: 100%;
+            /* The width is 100%, by default */
+        }
+        
+        .left-menu {
+            background-color: rgb(188, 194, 199);
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+        
+        .main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;
+            /* The width is 60%, by default */
+        }
+        
+        .right {
+            background-color: #4CAF50;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+        
+        .contentinfo {
+            background-color: #ebe714 !important;
+            padding: 20px;
+            float: left;
+            width: 100%;
+            /* The width is 100%, by default */
+        }
+        /* Use a media query to add a break point at 800px: */
+        
+        @media screen and (max-width:800px) {
+            .main-menu,
+            .left-menu,
+            .main,
+            .right,
+            .contentinfo {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
     </style>
 </head>
 
 <body>
 
-        <div class="jumbotron text-center">
-                <h1>My First Bootstrap Page</h1>
-                <p>Resize this responsive page to see the effect!</p> 
-                <h2>Media Queries</h2>
-                <p>Resize the browser window.</p>
-                <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
-              </div>
-         
-<div class="container-fluid">
-  <nav role="navigation" aria-label="main" class="col-xl main-menu">
-    <p>Main Menu</p>
-  </nav>
-</div>
-<div class="container">
-    <nav role="navigation" aria-label="main" class="col-xl contentinfo">
-      <p>Main Menu</p>
+    <nav class="main-nav text-center" style="background-color: lightslategray;">
+        <a href="home.html" style="text-decoration:none"> Home </a>
+        <a href="download.html" style="text-decoration:none"> Activity </a>
+        <a href="https://www.google.com/" style="text-decoration:none" target="_blank"> Google </a>
+        <a href="suggestions.html" style="text-decoration:none"> Suggestions </a>
     </nav>
-  </div>
 
-  <nav role="navigation" aria-label="Left" class="col-sm-4 left-menu">
-    <h2>Left Menu</h2>
-    <a href="bootstrap.html">bootstrap</a><br>
-    <a href="carousel.html">carousel</a><br>
-    <a href="heading.html">heading</a><br>
-    <a href="kbr.html">kbr</a><br>
-    <a href="responsiveDesign.html">responsiveDesign</a>
-  </nav>
-
-<main role="main" class="col-sm-4 main">
-  <p>Main Content</p>
-</main>
-
-<div class="col-sm-4 right">
-  <p>Right Content</p>
-</div>
-
-<Footer role="contentinfo" class="contentinfo">
-  <p>Footer</p>
-</Footer>
+    <div class="jumbotron text-center ">
+        umbotron text-center
+        <h1>Heading 1 <small>small tag</small></h1>
+        <p>Resize this responsive page to see the effect!</p>
+        <h2>Heading 2</h2>
+        <p>Resize the browser window.</p>
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+    </div>
 
 
-            
-    
+    <div class="container-fluid text-center " style="background-color: lightblue; ">
+        <nav>
+            <p>container-fluid</p>
+        </nav>
+    </div>
+
+    <div class="container text-center " style="background-color: peru; ">
+        <p>container text-center</p>
+    </div>
+
+    <div class="container ">
+        <nav style="z-index: -1; " role=" navigation " aria-label="main " class="col-xl contentinfo " style="background-color: #ec6029; ">
+            <p>Main Menu Yellow</p>
+        </nav>
+
+        <div class="container " style="z-index: -1; ">
+            <nav role="navigation " aria-label="Left " class="col-sm-4 left-menu " style="z-index: -1; ">
+                <h2>Left Menu</h2>
+                <a href="bootstrap.html ">bootstrap</a><br>
+                <a href="carousel.html ">carousel</a><br>
+                <a href="heading.html ">heading</a><br>
+                <a href="kbr.html ">kbr</a><br>
+                <a href="responsiveDesign.html ">responsiveDesign</a>
+            </nav>
+
+            <main role="main " class="col-sm-6 main " style="z-index: -1; ">
+                <p>Main Content</p>
+            </main>
+
+            <div class="col-sm-4 right " style="z-index: -1; ">
+                <p>Right Content</p>
+            </div>
+        </div>
+        <Footer role="contentinfo " class="contentinfo " style="z-index: -1; ">
+            <p>Footer</p>
+        </Footer>
+
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+            //Gives you the distance from top of document to the element
+            //no what you can see, think of it as if you print the page
+            //and then measure the distance from the top to the nav...
+            var navOffsetTop = $('.main-nav').offset().top;
+            //Add a listener for the scroll movement
+            $(window).scroll(function() {
+                //Gives you how much pixels has moved the scrollbar
+                var currentScroll = $(window).scrollTop();
+                //If the distance puts you in the nav position
+                if (currentScroll >= navOffsetTop) {
+                    //Change the main-nav to be fixed in the page
+                    $('.main-nav').css({
+                        position: 'fixed',
+                        top: '0',
+                        left: '0'
+                    });
+                } else {
+                    //Returns the nav to no-fixed position
+                    $('.main-nav').css({
+                        position: 'static'
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

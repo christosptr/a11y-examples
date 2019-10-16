@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<n>
+
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <style>
+            a:link {
+                color: #000000;
+                background-color: transparent
+            }
+            
+            a:visited {
+                color: #000000;
+                background-color: transparent
+            }
+            
+            a:hover {
+                color: #000000;
+                background-color: transparent
+            }
+            
+            a:active {
+                color: #000000;
+                background-color: transparent
+            }
+            
+            body {
+                height: 3000px;
+            }
+            
+            #header {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                box-shadow: 0px 10px 5px #888888;
+                border-radius: 25px;
+            }
+            
+            .main-nav {
+                line-height: 30px;
+                background-color: #b31515;
+                height: 30px;
+                width: 100%;
+                float: left;
+                padding: 5px;
+                border-radius: 25px;
+            }
+            
+            #section {
+                width: 350px;
+                float: left;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1 style="font-size: 400%">Website</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="home.html" style="text-decoration:none"> Home </a>
+            <a href="download.html" style="text-decoration:none"> Activity </a>
+            <a href="https://www.google.com/" style="text-decoration:none" target="_blank"> Google </a>
+            <a href="suggestions.html" style="text-decoration:none"> Suggestions </a>
+        </nav>
+
+        <div id="section">
+            <h2>Suggestions</h2>
+            <p>
+                Herpdaderp
+            </p>
+        </div>
+
+
+        <script type="text/javascript">
+            $(function() {
+                //Gives you the distance from top of document to the element
+                //no what you can see, think of it as if you print the page
+                //and then measure the distance from the top to the nav...
+                var navOffsetTop = $('.main-nav').offset().top;
+                //Add a listener for the scroll movement
+                $(window).scroll(function() {
+                    //Gives you how much pixels has moved the scrollbar
+                    var currentScroll = $(window).scrollTop();
+                    //If the distance puts you in the nav position
+                    if (currentScroll >= navOffsetTop) {
+                        //Change the main-nav to be fixed in the page
+                        $('.main-nav').css({
+                            position: 'fixed',
+                            top: '0',
+                            left: '0'
+                        });
+                    } else {
+                        //Returns the nav to no-fixed position
+                        $('.main-nav').css({
+                            position: 'static'
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</n>
